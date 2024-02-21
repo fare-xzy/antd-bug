@@ -1,16 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <a-card class="card" :bordered="false">
+    <template #title>
+      升级包内容&nbsp;&nbsp;&nbsp;&nbsp;
+      <a-radio-group name="radioGroup">
+        <a-radio value="1">占位1</a-radio>
+        <a-radio value="2">占位2</a-radio>
+      </a-radio-group>
+      <a-divider type="vertical" />
+      升级步骤
+      <a-input/>
+    </template>
+    <a-checkbox>
+      全选
+    </a-checkbox>
+  </a-card>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
